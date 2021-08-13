@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- <h1>Hello, world!</h1> -->
+
+<form action = "{{ url_for('video_lectures') }}" method = "POST">
+<div class="container">
+    <div class="row justify-content-around my-row">
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CS3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CS3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CS3402</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CS3402</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3402">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CS3403</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CS3403</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3403">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-around my-row">
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CE3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CE3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CE3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">MA3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - MA3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="MA3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">EC3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - EC3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="EC3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-around my-row">
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CSL3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CSL3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CSL3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">CSL3403</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CSL3403</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="CSL3403">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+            <h5 class="card-header">ECL3401</h5>
+            <div class="card-body">
+                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - ECL3401</p>
+                <div class="row justify-content-around">
+                    <button type="submit" class="btn btn-primary" name="video_button" value="ECL3401">Video Lectures</button>
+                    <button type="button" class="btn btn-primary">Notes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock content%}

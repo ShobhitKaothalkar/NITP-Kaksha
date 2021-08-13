@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="list-group my-list">
+    {% for lecture in lectures %}
+    <a href="{{ lecture.lecture_link }}" class="list-group-item list-group-item-action">
+        <div class="d-flex justify-content-between" style="margin-left: 20px; margin-right: 20px;">
+            <h5>{{ lecture.lecture_name }}</h5>
+            <p>{{ lecture.lecture_date }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock content %}
