@@ -1,35 +1,35 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="container">
+<div class="container my-container">
     <div class="row justify-content-around my-row">
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">CS3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Somaraju Suvvari<br>Course Title - CS3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Somaraju Suvvari<br><strong>Course Title</strong> - Data Structures</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3401') }}">Video
                         Lectures</a>
                     <a class="btn btn-primary" href="{{ url_for('notes', course='CS3401') }}">Notes</a>
                 </div>
             </div>
         </div>
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">CS3402</h5>
             <div class="card-body">
-                <p class="card-text">Faculty - Dr. Dinesh Dash<br>Course Title - CS3402</p>
-                <div class="row justify-content-around">
+                <p class="card-text"><strong>Faculty</strong> - Dr. Dinesh Dash<br><strong>Course Title</strong> - Discrete Mathematics and Graph Theory</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3402') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='CS3402') }}">Notes</a>
                     </div>
             </div>
         </div>
-        <div class="card bg-dark text-light" style="width: 18rem;">
+        <div class="card bg-dark text-light" style="width: 22rem;">
             <h5 class="card-header">CS3403</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Kumar Abhishek<br>Course Title - CS3403</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Kumar Abhishek<br><strong>Course Title</strong> - Web Technology</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3403') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='CS3403') }}">Notes</a>
@@ -38,33 +38,33 @@
         </div>
     </div>
     <div class="row justify-content-around my-row">
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">CE3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CE3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Dr. Abdur Rahman Quaff<br><strong>Course Title</strong> - Environmental Engineering</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CE3401') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='CE3401') }}">Notes</a>
                     </div>
             </div>
         </div>
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">MA3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - MA3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Dr. Partha Sarathi Mandal<br><strong>Course Title</strong> - Probablity and Statistics</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='MA3401') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='MA3401') }}">Notes</a>
                     </div>
             </div>
         </div>
-        <div class="card bg-dark text-light" style="width: 18rem;">
+        <div class="card bg-dark text-light" style="width: 22rem;">
             <h5 class="card-header">EC3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - EC3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Dr. Syed Shahnawazuddin<br><strong>Course Title</strong> - Digital Logic and Computer Organisation</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='EC3401') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='EC3401') }}">Notes</a>
@@ -73,11 +73,11 @@
         </div>
     </div>
     <div class="row justify-content-around my-row">
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">CSL3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Somaraju Suvvari<br>Course Title - CSL3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Somaraju Suvvari<br><strong>Course Title</strong> - Data Structures Lab</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CSL3401') }}">Video
                         Lectures</a>
                     <a class="btn btn-primary" href="{{ url_for('notes', course='CSL3401') }}">Notes</a>
@@ -85,22 +85,22 @@
                 </div>
             </div>
         </div>
-        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
+        <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 22rem;">
             <h5 class="card-header">CSL3403</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Kumar Abhishek<br>Course Title - CSL3403</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - Kumar Abhishek<br><strong>Course Title</strong> - Web Technology Lab</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CSL3403') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='CSL3403') }}">Notes</a>
                     </div>
             </div>
         </div>
-        <div class="card bg-dark text-light " style="width: 18rem;">
+        <div class="card bg-dark text-light " style="width: 22rem;">
             <h5 class="card-header">ECL3401</h5>
-            <div class="card-body">
-                <p class="card-text">Faculty - Mr. XYZ<br>Course Title - ECL3401</p>
-                <div class="row justify-content-around">
+            <div class="card-body d-flex flex-column">
+                <p class="card-text"><strong>Faculty</strong> - DR. Bharat Gupta<br><strong>Course Title</strong> -  Digital Logic and Computer Organisation Lab</p>
+                <div class="row justify-content-around mt-auto">
                     <a class="btn btn-primary" href="{{ url_for('video_lectures', course='ECL3403') }}">Video
                         Lectures</a>
                         <a class="btn btn-primary" href="{{ url_for('notes', course='ECL3401') }}">Notes</a>
