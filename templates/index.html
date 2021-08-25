@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<form action = "{{ url_for('video_lectures') }}" method = "POST">
 <div class="container">
     <div class="row justify-content-around my-row">
         <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
@@ -9,8 +8,9 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Somaraju Suvvari<br>Course Title - CS3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3401') }}">Video
+                        Lectures</a>
+                    <a class="btn btn-primary" href="{{ url_for('notes', course='CS3401') }}">Notes</a>
                 </div>
             </div>
         </div>
@@ -19,9 +19,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Dr. Dinesh Dash<br>Course Title - CS3402</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3402">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3402') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='CS3402') }}">Notes</a>
+                    </div>
             </div>
         </div>
         <div class="card bg-dark text-light" style="width: 18rem;">
@@ -29,9 +30,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Kumar Abhishek<br>Course Title - CS3403</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CS3403">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CS3403') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='CS3403') }}">Notes</a>
+                    </div>
             </div>
         </div>
     </div>
@@ -41,9 +43,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Mr. XYZ<br>Course Title - CE3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CE3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CE3401') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='CE3401') }}">Notes</a>
+                    </div>
             </div>
         </div>
         <div class="card bg-dark text-light mb-2 mb-md-0" style="width: 18rem;">
@@ -51,9 +54,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Mr. XYZ<br>Course Title - MA3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="MA3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='MA3401') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='MA3401') }}">Notes</a>
+                    </div>
             </div>
         </div>
         <div class="card bg-dark text-light" style="width: 18rem;">
@@ -61,9 +65,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Mr. XYZ<br>Course Title - EC3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="EC3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='EC3401') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='EC3401') }}">Notes</a>
+                    </div>
             </div>
         </div>
     </div>
@@ -73,8 +78,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Somaraju Suvvari<br>Course Title - CSL3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CSL3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CSL3401') }}">Video
+                        Lectures</a>
+                    <a class="btn btn-primary" href="{{ url_for('notes', course='CSL3401') }}">Notes</a>
+
                 </div>
             </div>
         </div>
@@ -83,9 +90,10 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Kumar Abhishek<br>Course Title - CSL3403</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="CSL3403">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='CSL3403') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='CSL3403') }}">Notes</a>
+                    </div>
             </div>
         </div>
         <div class="card bg-dark text-light " style="width: 18rem;">
@@ -93,12 +101,13 @@
             <div class="card-body">
                 <p class="card-text">Faculty - Mr. XYZ<br>Course Title - ECL3401</p>
                 <div class="row justify-content-around">
-                    <button type="submit" class="btn btn-primary" name="video_button" value="ECL3401">Video Lectures</button>
-                    <button type="button" class="btn btn-primary">Notes</button>
-                </div>
+                    <a class="btn btn-primary" href="{{ url_for('video_lectures', course='ECL3403') }}">Video
+                        Lectures</a>
+                        <a class="btn btn-primary" href="{{ url_for('notes', course='ECL3401') }}">Notes</a>
+                    </div>
             </div>
         </div>
     </div>
-</form>
 
-{% endblock content%}
+
+    {% endblock content%}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="list-group my-list">
+    {% for n in notes %}
+    <a href="{{ n.notes_link }}" class="list-group-item list-group-item-action">
+        <div class="d-flex justify-content-between" style="margin-left: 20px; margin-right: 20px;">
+            <h4><strong>{{ n.notes_name }}</strong></h4>
+            <div>
+            <h5><strong>Provided by: </strong>{{ n.provided_by }}</h5>
+            <h5><strong>Till: </strong>{{ n.till_date }}</h5>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock content %}

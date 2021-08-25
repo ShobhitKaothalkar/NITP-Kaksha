@@ -17,17 +17,33 @@ class Lecture(db.Model):
     def __repr__(self):
         return f"Lecture('{self.id}', '{self.lecture_name}', '{self.course}', '{self.lecture_date}', '{self.lecture_link}')"
 
+class Notes(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    course = db.Column(db.String(20), nullable = False)
+    notes_name = db.Column(db.String(30), nullable = False)
+    notes_link = db.Column(db.Text(), unique=True, nullable = False, default='#')
+    provided_by = db.Column(db.String(100), nullable = False, default='Anonymous')
+    till_date = db.Column(db.DateTime())
+
+    def __repr__(self):
+        return f"Notes('{self.id}', '{self.notes_name}', '{self.course}', '{self.provided_by}', '{self.till_date}')"
+
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template('index.html')
 
-@app.route("/video_lectures", methods=['GET', 'POST'])
-def video_lectures():
-    if request.method == 'POST':
-        lectures = Lecture.query.filter_by(course = request.form['video_button']).all()
-        print(lectures)
-        return render_template('video_lectures.html', lectures = lectures)
+@app.route("/video_lectures/<course>", methods=['GET', 'POST'])
+def video_lectures(course):
+    lectures = Lecture.query.filter_by(course = course).all()
+    print(lectures)
+    return render_template('video_lectures.html', lectures = lectures)
+
+@app.route("/notes/<course>", methods=['GET', 'POST'])
+def notes(course):
+    notes = Notes.query.filter_by(course = course).all()
+    print(notes)
+    return render_template('notes.html', notes = notes)
 
 if __name__ == '__main__':
     app.run(debug=True)
