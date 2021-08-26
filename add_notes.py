@@ -8,7 +8,7 @@ while(True):
 
     course = input("Enter course: ")
     notes_name = input("Enter name: ")
-    provided_by = input("Enter the link: ")
+    provided_by = input("Enter the provider: ")
     till_date = datetime.strptime(input("Enter the date: "), "%d-%m-%Y")
     notes_link = input("Enter the link: ")
 
