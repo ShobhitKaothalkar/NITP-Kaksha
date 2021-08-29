@@ -45,5 +45,9 @@ def notes(course):
     print(notes)
     return render_template('notes.html', notes = notes)
 
+@app.route("/timetable")
+def timetable():
+    return render_template('timetable.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
