@@ -1,3 +1,3 @@
 # NITP-Kaksha
 
-This project is hosted at [NITP Kaksha](https://www.nitpthirdsem.herokuapp.com)
+This project is hosted at [NITP Kaksha](https://nitpthirdsem.herokuapp.com/)
